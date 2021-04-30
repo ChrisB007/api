@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap');
+body{
+    background-color: #e8eae6;
+}
+.navbar{
+    background-color: #272931;
+    box-shadow: unset;
+    margin-bottom: 39px;
+    opacity: .8;
+}
+
+footer {
+    background: #272831;
+    box-shadow: unset;
+    min-height: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #171819;
+    border: 1px solid #fefeff;
+}
+
+button#qsLoginBtn {
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+
+.navbar .router-link-exact-active {
+    color: #041433;
+    border-bottom: 3px solid #151515;
+}
+
+a.logoimage.navbar-brand {
+    font-size: 2.7rem;
+    font-family: 'Istok Web', sans-serif;
+    background-color: #ffffff;
+    border-radius: 50%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    color: #989899;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hoverlogo, .hoverlogo:hover{
+    color:#989899 ;
+    text-decoration: none;
+
+}
+
+.heroillustration{
+    width: 684px;
+    height: 523px;
+    border-radius: 30% 70% 70% 30% / 30% 32% 68% 70% ;
+    background-color: #F87C40;
+    background-image: url("/images/prog.png");
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.herocontainer.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.herotext {
+    font-size: 4rem;
+    font-weight: 700;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.navbarlink{
+    color: #ffffff;
+}
+
+a.navbarlink.nav-link.router-link-exact-active, a.navbarlink.nav-link.router-link-exact-active:hover {
+    color: #ffffff;
+}
+
+.navbar .router-link-exact-active {
+    color: #041433;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1560px) {
+    .heroillustration{
+        width: 104%;
+    }
+    span.herotext{
+        text-align: justify; 
+    }
+    
+}
