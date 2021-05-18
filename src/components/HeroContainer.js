@@ -1,19 +1,20 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Jumbotron, Button, Container } from 'reactstrap';
 
 const HeroContainer = () => {
     return (
         <>
-            <Container className="herocontainer">
-                <Row className="rowcontainer">
-                    <Col xs={{size:12, order:2}} sm={{size:12, order:2}} md={{size:6, order:2}} lg={{size:6, order:1}} className="herocol"><span className="herotext">Build something meaningFUL with these RESTful APIs</span></Col>
-                    <Col xs={{size:12, order:1}} sm={{size:12, order:1}} md={{size:6, order:1}} lg={{size:6, order:2}} className="herocol">
-                        <div className="heroillustration">
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-
+            <Jumbotron fluid>
+                <Container fluid>
+                    <h1 className="display-3 heydev">Hey Developers</h1>
+                    <p className="lead">Build something meaningFUL with these RESTful APIs.</p>
+                    <hr className="my-2" />
+                    <p className="lead">Easily add your own API and share with with the world.</p>
+                    <p className="lead">
+                    <Button className="herobutton">Learn More</Button>
+                    </p>
+                </Container>
+            </Jumbotron>
         </>
     )
 }

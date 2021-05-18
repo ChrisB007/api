@@ -58,6 +58,18 @@ const NavBar = () => {
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
+                    to="/submit-api"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Submit an API
+                  </NavLink>
+                </NavItem>
+              )}
+              {isAuthenticated && (
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
                     to="/external-api"
                     exact
                     activeClassName="router-link-exact-active"
