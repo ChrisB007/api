@@ -1,38 +1,31 @@
 import React, {useState} from "react";
+import { Container, Row, Col } from 'reactstrap';
+import Riddle from './Riddles';
+
 
 
 function Content(props){
-  // eslint-disable-next-line
-  const [apidata, setApidata] = useState([]);
-
-
-
-// eslint-disable-next-line
-  const apiGrid = [
-    {
-        name: "",
-        email: "",
-        description: "",
-        launch_date: "",
-        url: "",
-        categories: [],
-        github: "",
-        file_upload: ""
-    }
-]
 
   return (
-      <div className="next-steps my-5 gridiv">
-        <div className= "gridinner">
-          <img src="" alt=""/>
-        </div>
-        <div className= "">
-          <p>props.name</p>
-          <p>props.description</p>
-          <p>props.url</p>
-          <p>props.categories</p>
-        </div>
-      </div>
+    <>
+      <Row>
+        <Col className="colclass" xs="12" sm="4">
+          <div id="easy" className="colsdiv">
+            <Riddle id="easyriddle" />
+          </div>
+        </Col>
+        <Col className="colclass" xs="12" sm="4">
+          <div id="medium" className="colsdiv">
+            <Riddle id="mediumriddle" />
+          </div>
+        </Col>
+        <Col className="colclass" xs="12" sm="4">
+          <div id="hard" className="colsdiv">
+            <Riddle id="hardriddle" />
+          </div>
+        </Col>
+      </Row>
+    </>
     );
   }
 

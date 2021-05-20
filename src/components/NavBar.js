@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from '../images/log.png';
 
 import {
   Collapse,
@@ -39,11 +40,11 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar light expand="md">
         <Container>
-        <NavbarBrand className="logoimage" ><a href="/" className="hoverlogo" exact>AP!</a></NavbarBrand>
+        <NavbarBrand className="logoimage" ><a href="/" className="hoverlogo" exact><img className="logoimage" src={logo} alt="logo"/></a></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   tag={RouterNavLink}
                   to="/"
@@ -53,7 +54,7 @@ const NavBar = () => {
                 >
                   Developers
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               {isAuthenticated && (
                 <NavItem>
                   <NavLink
@@ -88,7 +89,7 @@ const NavBar = () => {
                     className="btn-margin"
                     onClick={() => loginWithRedirect()}
                   >
-                    Use API
+                    Submit a Riddle
                   </Button>
                 </NavItem>
               )}
